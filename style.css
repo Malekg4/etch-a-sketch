@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack button and grid vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to create rows */
+    width: 480px;    /* Total width for the grid */
+    border: 1px solid #ccc; /* Optional border for the grid */
+}
+
+.square {
+    background-color: white; /* Default square color */
+    border: 1px solid #ccc;  /* Border for squares */
+    box-sizing: border-box;   /* Include padding and border in the element's total width and height */
+}
+
+button {
+    margin-bottom: 20px; /* Space between button and grid */
+    padding: 10px 20px;  /* Button padding */
+    font-size: 16px;     /* Button font size */
+    cursor: pointer;      /* Pointer cursor on hover */
+}
